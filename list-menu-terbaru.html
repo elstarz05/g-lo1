@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Web gulai lokal | g-lo</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav>
+        <div class="nav__header">
+          <div class="nav__logo">
+            <a href="#">
+              <img
+                src="assets/logo-dark.png"
+                alt="logo"
+                class="nav__logo-dark"
+              />
+              <img
+                src="assets/logo-white.png"
+                alt="logo"
+                class="nav__logo-white"
+              />
+            </a>
+          </div>
+          <div class="nav__menu__btn" id="menu-btn">
+            <i class="ri-menu-line"></i>
+          </div>
+        </div>
+        <ul class="nav__links" id="nav-links">
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#special">SPECIAL</a></li>
+          <li><a href="index.html">MENU</a></li>
+          <li><a href="#event">EVENTS</a></li>
+          <li><a href="#contact">CONTACT US</a></li>
+        </ul>
+      </nav>
+      <div class="section__container header__container" id="home">
+        <div class="header__image">
+          <img src="assets/header.png" alt="header" />
+        </div>
+        <div class="header__content">
+          <h2>WAKTU YANG TEPAT UNTUK MENIKMATI RASA GULAI YANG ENAK</h2>
+          <h1>GULAI<br /><span>LOKAL</span></h1>
+        </div>
+      </div>
+    </header>
+
+    <section class="section__container banner__container" id="special">
+      <div class="banner__card">
+        <a href="list-menu-terbaru.html">
+            <p>COBALAH TERBARU HARI INI</p>
+            <h4>GULAI PALING POPULER</h4>
+          </a>
+      </div>
+      <div class="banner__card">
+        <a href="list-salat.html">
+            <p>COBALAH PAKET</p>
+        <h4>GURIH & PEDAS<br />LEBIH ENAK</h4>
+          </a>
+      </div>
+      <div class="banner__card">
+        <a href="list-salat.html">
+          <p>COBALAH MENU SALAD</p>
+          <h4>EBIH MENYENANGKAN<br />LEBIH YUMY</h4>
+        </a>
+        
+      </div>
+    </section>
+
+    <section class="section__container order__container" id="menu">
+      <h3>MENU TERBARU HARI INI</h3>
+      <h2 class="section__header">PILIH & NIKMATI</h2>
+      <p class="section__description">
+        Baik Anda Menginginkan cita rasa klasik atau kombinasi yang berani,
+        disinilah perjalanan kuliner anda dimulai. Manjakan keinginan anda dan
+        nikmati setiap gigitan sambil menciptakan pengalaman gulai yang
+        dipersonialisasikan bersama Gulai Lokal.
+      </p>
+      <div class="menu__grid">
+        <div class="menu__card">
+          <img src="https://i.pinimg.com/236x/58/07/60/580760c6cffbf27e3355107beda6bd7d.jpg" alt="Gulai Ikan" class="menu__img"/>
+          <div class="menu__content">
+            <h4>Gulai Ikan Patin</h4>
+            <p>Ikan segar dimasak dengan bumbu rempah khas</p>
+            <div class="menu__price">
+              <span>Rp 10.000</span>
+              <button
+              onclick="orderMenu('Gulai Kepala Ikan', '10.000')"
+              class="btn"
+            >
+              ORDER NOW
+            </button>
+            </div>
+          </div>
+        </div>
+    
+        <div class="menu__card">
+          <img src="https://i.pinimg.com/236x/a5/3b/a2/a53ba253b1319fdc9a245631dae9b69b.jpg" alt="Gulai Ayam" class="menu__img"/>
+          <div class="menu__content">
+            <h4>Gulai Ayam Kentang</h4>
+            <p>Ayam kampung pilihan dengan kuah gulai kental</p>
+            <div class="menu__price">
+              <span>Rp 10.000</span>
+              <button
+              onclick="orderMenu('Gulai Ayam', '10.000')"
+              class="btn"
+            >
+              ORDER NOW
+            </button>
+            </div>
+          </div>
+        </div>
+    
+        <div class="menu__card">
+          <img src="https://i.pinimg.com/736x/f2/16/00/f216006fee3f368ff62ef4c2538f1d15.jpg" alt="Gulai Kambing" class="menu__img"/>
+          <div class="menu__content">
+            <h4>Gulai Kambing</h4>
+            <p>Daging kambing empuk dengan rempah pilihan</p>
+            <div class="menu__price">
+              <span>Rp 15.000</span>
+              <button
+              onclick="orderMenu('Gulai Kambing', '15.000')"
+              class="btn"
+            >
+              ORDER NOW
+            </button>
+            </div>
+          </div>
+        </div>
+    
+        <div class="menu__card">
+          <img src="https://i.pinimg.com/236x/89/18/b9/8918b9566678d231d2fe75259516c0fe.jpg" alt="Gulai Udang" class="menu__img"/>
+          <div class="menu__content">
+            <h4>Gulai Udang</h4>
+            <p>Udang segar dengan kuah gulai special</p>
+            <div class="menu__price">
+              <span>Rp 10.000</span>
+              <button
+              onclick="orderMenu('Gulai Udang', '10.000')"
+              class="btn"
+            >
+              ORDER NOW
+            </button>
+            </div>
+          </div>
+        </div>
+        <div class="menu__card">
+          <img src="https://i.pinimg.com/236x/9d/dc/9f/9ddc9fa340a34f963478139edd3fd289.jpg" alt="Gulai Udang" class="menu__img"/>
+          <div class="menu__content">
+            <h4>Gulai Nangka</h4>
+            <p>Udang segar dengan kuah gulai special</p>
+            <div class="menu__price">
+              <span>Rp 10.000</span>
+              <button
+              onclick="orderMenu('Gulai Nangka', '10.000')"
+              class="btn"
+            >
+              ORDER NOW
+            </button>
+            </div>
+          </div>
+        </div>
+        <div class="menu__card">
+          <img src="https://i.pinimg.com/236x/c6/25/81/c625813df7c67e01073c7637490e01f1.jpg" alt="Gulai Udang" class="menu__img"/>
+          <div class="menu__content">
+            <h4>Gulai Asam Padeh</h4>
+            <p>Udang segar dengan kuah gulai special</p>
+            <div class="menu__price">
+              <span>Rp 10.000</span>
+              <button
+              onclick="orderMenu('Gulai Asam Padeh', '10.000')"
+              class="btn"
+            >
+              ORDER NOW
+            </button>
+            </div>
+          </div>
+        </div>
+        <div class="menu__card">
+          <img src="https://i.pinimg.com/736x/6e/8f/94/6e8f94a290ddbabbe1512320f8adbd18.jpg" alt="Gulai Udang" class="menu__img"/>
+          <div class="menu__content">
+            <h4>Gulai Tauco</h4>
+            <p>Udang segar dengan kuah gulai special</p>
+            <div class="menu__price">
+              <span>Rp 10.000</span>
+              <button
+              onclick="orderMenu('Gulai Tauco', '10.000')"
+              class="btn"
+            >
+              ORDER NOW
+            </button>
+            </div>
+          </div>
+        </div>
+        <div class="menu__card">
+          <img src="https://i.pinimg.com/236x/7d/df/c0/7ddfc045ca9be9b9ed3911b20b883635.jpg" alt="Gulai Udang" class="menu__img"/>
+          <div class="menu__content">
+            <h4>Gulai Daun Singkong Jengkol</h4>
+            <p>Udang segar dengan kuah gulai special</p>
+            <div class="menu__price">
+              <span>Rp 10.000</span>
+              <button
+              onclick="orderMenu('Gulai Tauco', '10.000')"
+              class="btn"
+            >
+              ORDER NOW
+            </button>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <section class="section__container event__container" id="event">
+      <div class="event__content">
+        <div class="event__image">
+          <img src="assets/event.png" alt="event" />
+        </div>
+        <div class="event__details">
+          <h3>Discover</h3>
+          <h2 class="section__header">UPCOMING EVENTS</h2>
+          <p class="section__description">
+            Dari mencicipi gulai eksklusif dan kolaborasi dengan warga lokal
+            hingga menciptakan rasa yang khas dengan harga yang relatif murah,
+            selalu ada sesuatu yang istimewa di g-lo. Jadilah orang pertama yang
+            mengetahui tentang acara, promosi, dan hal-hal baru yang terus
+            mendatang sembari kami menghadirkan kelezatan dan cita rasa bagi
+            pelanggan kami yang berharga. Bergabung dengan kami dengan
+            menciptakan momen tak terlupakan dan kenangan lezat bersama!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="reservation" id="contact">
+      <div class="section__container reservation__container">
+        <h3>RESERVATION</h3>
+        <h2 class="section__header">PESAN MENUMU</h2>
+        <form action="/">
+          <input type="text" placeholder="NAME" />
+          <input type="email" placeholder="EMAIL" />
+          <input type="date" placeholder="DATE" />
+          <input type="time" placeholder="TIME" />
+          <input type="number" placeholder="PEOPLE" />
+          <button class="btn" type="submit">FIND MENU</button>
+        </form>
+      </div>
+      <img
+        src="assets/reservation-bg-1.png"
+        alt="reservation"
+        class="reservation__bg-1"
+      />
+      <img
+        src="assets/reservation-bg-2.png"
+        alt="reservation"
+        class="reservation__bg-2"
+      />
+    </section>
+
+    <footer class="footer">
+      <div class="section__container footer__container">
+        <div class="footer__logo">
+          <img src="assets/logo-white.png" alt="logo" />
+        </div>
+        <div class="footer__content">
+          <p>
+            Selamat Datang di G-lo, tempat bertemunya gairah akan makanan
+            istimewa dan keramahtamahan sejati. kisah kami adalah tentang
+            dedikasi untuk menciptakan pengalaman gulai yang sempurna, mulai
+            dari mencari rempah-rempah terbaik hingga menghadirkan cita rasa
+            yang tak tertandingi di setiap gigitan.
+          </p>
+          <div>
+            <ul class="footer__links">
+              <li>
+                <span><i class="ri-map-pin-2-fill"></i></span>
+                Bandaratu, Kota Mukomuko, Provinsi Bengkulu
+              </li>
+              <li>
+                <span><i class="ri-mail-fill"></i></span>
+                g-lo@mukomuko.com
+              </li>
+            </ul>
+            <div class="footer__socials">
+              <a href="#"><i class="ri-facebook-circle-fill"></i></a>
+              <a href="#"><i class="ri-instagram-fill"></i></a>
+              <a href="#"><i class="ri-twitter-fill"></i></a>
+              <a href="#"><i class="ri-whatsapp-fill"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bar">
+        Copyright © 2024 Web Gulai Lokal. All rights reserved.
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="order.js"></script>
+  </body>
+</html>
